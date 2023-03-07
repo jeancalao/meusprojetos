@@ -7,8 +7,6 @@ Para baixar a imagem:
 
 <i>docker push jeancalao/fullcycle:latest</i>
 
-Os programas desenvolvido em GO estão no repositório:
-
 Para compilar com um tamanho reduzido utilizei o comando
 
 <i>go build -ldflags "-s -w" fullcycle.go</i>
