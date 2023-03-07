@@ -1,18 +1,17 @@
-# meusprojetos
+# Desafio Ful Cycle 3.0
 Repositório para incluir os fontes e demais arquivos referente a aulas, cursos, treinamentos, testes
 
-Desafio Full Cycle 3.0#
-Criar uma aplicação em GO que demonstre "Full Cycle Rocks!", deve ter um tamanho < 2 Mb.
+<b>Criar uma aplicação em GO que demonstre "Full Cycle Rocks!", deve ter um tamanho < 2 Mb.</b>
 
 Para baixar a imagem:
 
-docker push jeancalao/fullcycle:latest
+<i>docker push jeancalao/fullcycle:latest</i>
 
-os programas desenvolvido em GO estão no repositório:
+Os programas desenvolvido em GO estão no repositório:
 
 Para compilar com um tamanho reduzido utilizei o comando
 
-go build -ldflags "-s -w" fullcycle.go
+<i>go build -ldflags "-s -w" fullcycle.go</i>
 
 Ao executar o docker run, aparece como resultado da imagem:
 
