@@ -1,3 +1,9 @@
+FROM golang as builder
+WORKDIR /app
+COPY *.go /app
+RUN go build -ldflags "-s -w" fullcycle.go
+
 FROM scratch
-COPY ./fullcycle .
-CMD [ "./fullcycle" ]
+WORKDIR /app
+COPY --from=builder /app/fullcycle /app/fullcycle
+CMD [ "/app/fullcycle" ]
